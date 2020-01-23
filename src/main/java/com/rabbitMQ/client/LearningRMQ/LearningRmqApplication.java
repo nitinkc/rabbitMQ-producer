@@ -20,5 +20,7 @@ public class LearningRmqApplication implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 		rabbitTemplate.convertAndSend("Hello World from my Program");
 
+		rabbitTemplate.convertAndSend("TestExchange","testRouting","Hello from program");
+
 	}
 }
