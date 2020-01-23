@@ -18,9 +18,12 @@ public class LearningRmqApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		rabbitTemplate.convertAndSend("Hello World from my Program");
+		//rabbitTemplate.convertAndSend("Hello World from my Program");
+		//rabbitTemplate.convertAndSend("TestExchange","testRouting","Hello from program");
 
-		rabbitTemplate.convertAndSend("TestExchange","testRouting","Hello from program");
+		Student student = new Student(1001L, "XZY");
+
+		rabbitTemplate.convertAndSend("TestExchange","testRouting",student);
 
 	}
 }
