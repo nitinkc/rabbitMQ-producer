@@ -1,9 +1,6 @@
 package com.rabbitMQ.client.LearningRMQ;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.io.Serializable;
 
@@ -18,4 +15,12 @@ import java.io.Serializable;
 public class Student implements Serializable {
     private Long id;
     private String name;
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                '}';
+    }
 }
