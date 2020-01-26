@@ -1,4 +1,4 @@
-package com.rabbitMQ.client.LearningRMQ;
+package com.rabbitMQ.producer;
 
 import lombok.*;
 

@@ -8,10 +8,10 @@
 		<version>2.2.4.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.rabbitMQ.client</groupId>
-	<artifactId>LearningRMQ</artifactId>
+	<groupId>com.rabbitMQ.producer</groupId>
+	<artifactId>RabbitMq-Producer</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>LearningRMQ</name>
+	<name>RabbitMq-Producer</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
