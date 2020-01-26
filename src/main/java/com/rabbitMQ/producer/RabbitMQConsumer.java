@@ -10,13 +10,13 @@ import java.time.LocalDateTime;
 import java.util.stream.IntStream;
 
 @SpringBootApplication
-public class LearningRmqApplication implements CommandLineRunner {
+public class RabbitMQConsumer implements CommandLineRunner {
 
 	@Autowired
 	private RabbitTemplate rabbitTemplate;
 
 	public static void main(String[] args) {
-		SpringApplication.run(LearningRmqApplication.class, args);
+		SpringApplication.run(RabbitMQConsumer.class, args);
 	}
 
 	@Override
